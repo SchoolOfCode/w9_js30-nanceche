@@ -43,13 +43,3 @@ body {
   transform-origin: 100%;
   transform: rotate(90deg);
 }
-
-.hand-rotate {
-  width: 50%;
-  height: 6px;
-  background: black;
-  position: absolute;
-  top: 50%;
-  transform-origin: 100%;
-  transform: rotate(6deg);
-}
