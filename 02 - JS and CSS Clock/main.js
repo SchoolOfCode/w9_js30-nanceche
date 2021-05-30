@@ -1,6 +1,3 @@
-//get handle
-//every 1 second rotate by 6 degrees
-//start at x =100
 const secondHand = document.getElementById("second-hand");
 const minHand = document.getElementById("min-hand");
 const hourHand = document.getElementById("hour-hand");
