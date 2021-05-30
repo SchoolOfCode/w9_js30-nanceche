@@ -1,21 +1,16 @@
-//get handle
-//every 1 second rotate by 6 degrees
-//start at x =100
+// function setDate() {
+//   //   console.log({ Date });
+//   const now = new Date();
+//   const seconds = now.getSeconds();
+//   console.log(seconds);
+// }
+
 const secondHand = document.getElementById("second-hand");
-const minHand = document.getElementById("min-hand");
-const hourHand = document.getElementById("hour-hand");
-let count = 0;
-setInterval(function () {
-  count++;
-  secondHand.style.transform = `rotate(${90 + 6 * count}deg)`;
-}, 1000);
 
-setInterval(function () {
-  count++;
-  minHand.style.transform = `rotate(${90 + 6 * count}deg)`;
-}, 60000);
+setInterval(moveSecondHand, 1000);
 
-setInterval(function () {
-  count++;
-  hourHand.style.transform = `rotate(${90 + 6 * count}deg)`;
-}, 600000);
+function moveSecondHand() {
+  const now = new Date();
+  const seconds = now.getSeconds();
+  secondHand.style.transform = `rotate(${90 + seconds * 6}deg)`;
+}
