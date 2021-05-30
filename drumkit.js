@@ -5,5 +5,9 @@ window.addEventListener("keydown", function (e) {
   audio.currentTime = 0;
   audio.play();
   key.classList.add("playing");
+
+  setTimeout(function () {
+    key.classList.remove("playing");
+  }, 500);
 });
 //just checking
