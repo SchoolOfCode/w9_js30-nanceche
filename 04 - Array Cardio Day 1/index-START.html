@@ -61,12 +61,17 @@
     // 4. How many years did all the inventors live all together?
           //passed-year of each object 
           //add this together
-        let yearsLivedAllTogether= inventors.reduce(a=>a.passed,a.year)
-        console.log(yearsLivedAllTogether)
+        let yearsLivedAllTogether=
+         inventors.reduce((total,inventors)=>{
+           return total+(inventors.passed-inventors.year)
+           
+         },0)
+         console.log(yearsLivedAllTogether)
     // 5. Sort the inventors by years lived
 
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+
 
 
     // 7. sort Exercise
@@ -76,6 +81,14 @@
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
 
+   
+
+
+
+
+
   </script>
 </body>
 </html>
+
+
